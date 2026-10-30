@@ -1342,10 +1342,48 @@ img {
 
 /* 반응형 모바일 대응 (필요 시) */
 @media (max-width: 768px) {
+
   .promo-banner-card,
   .promo-banner-card.full-image-banner {
     height: 180px; /* 모바일에서는 높이를 조금 줄여 균형을 맞춤 */
   }
+
+  /* 1. 캐러셀 전체 컨테이너 높이를 콘텐츠에 맞게 유연하게 풀기 */
+  .hero-carousel-container {
+    height: auto;
+    min-height: unset;
+    
+  }
+
+  /* 2. 각 슬라이드 아이템의 높이를 자동(auto)으로 설정하여 글자와 이미지가 답답하지 않게 조절 */
+  .hero-slide {
+    height: auto;
+    flex-direction: column;
+  }
+
+  /* 3. 텍스트 영역의 패딩을 모바일에 맞게 컴팩트하게 조절 */
+  .hero-content {
+    padding: 32px 20px 24px;
+    text-align: center; /* 모바일에서는 텍스트를 정중앙 정렬하면 더 세련돼 보입니다 */
+  }
+
+  .hero-content .hero-cta-btn {
+    align-self: center; /* 버튼도 가운데 정렬 */
+  }
+
+  /* 4. 이미지(비주얼) 영역의 높이를 스마트폰 화면에 어울리는 비율(예: 280px 또는 320px)로 고정 */
+  .hero-visual {
+    width: 100%;
+    height: 300px; /* 스마트폰에서 이미지가 너무 길거나 짧지 않도록 적절한 높이 부여 */
+  }
+
+  .hero-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
 }
 
 /* =========================================
