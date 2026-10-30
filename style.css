@@ -1491,3 +1491,16 @@ img {
     font-size: 12.5px;
   }
 }
+
+
+@media (max-width: 1024px) {
+  /* PC용 대메뉴와 AI Beauty 버튼 등을 모바일에서 숨기거나 정리 */
+  .main-nav {
+    display: none; /* 임시로 숨기거나, 햄버거 메뉴 토글 구조로 변경 */
+  }
+
+  /* 헤더 내부 공간을 로고와 액션 아이콘 중심으로 넓게 배치 */
+  .header-inner {
+    height: 64px; /* 모바일에서는 헤더 높이를 살짝 줄여줌 */
+  }
+}
