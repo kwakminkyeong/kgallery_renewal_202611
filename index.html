@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KGallery | Authentic Korean Lifestyle Curation</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- 분리된 외부 CSS 파일 연결 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    COMPLIMENTARY SHIPPING ON ALL ORDERS OVER $75 | AUTHENTIC KOREAN LIFESTYLE CURATION
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo-wrap">
+        <a href="index.html" class="logo-text">KGallery</a>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav class="main-nav">
+        <a href="https://k-gallery.com/shop/collections/new-arrivals" class="nav-link">New</a>
+        <a href="https://k-gallery.com/shop/brands" class="nav-link">Brands</a>
+        <a href="https://k-gallery.com/shop/collections/all-items" class="nav-link">Shop All</a>
+        <a href="https://k-gallery.com/shop/collections/sale" class="nav-link">Offers</a>
+        <a href="visit_us.html" class="nav-link">Visit Us</a>
+        <a href="https://k-gallery.com/shop/services/beauty-consultations" class="nav-btn-pill">AI Beauty</a>
+      </nav>
+
+      <!-- Action Icons -->
+      <div class="header-actions">
+        <button class="action-icon-btn" aria-label="Search">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <button class="action-icon-btn" aria-label="Wishlist">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        </button>
+        <button class="action-icon-btn" aria-label="Cart">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="action-badge" id="cartCountBadge">2</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO CAROUSEL SECTION -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-carousel-container" id="heroCarousel">
+          <div class="hero-track" id="heroTrack">
+            
+            <div class="hero-slide">
+              <div class="hero-content">
+                <span class="hero-label">Curated Korean Aesthetics</span>
+                <h1 class="hero-title">THE ART OF<br>SURPRISE</h1>
+                <p class="hero-desc">Explore thoughtful Korean crafts, organic skincare, and artisan pantry essentials crafted with timeless heritage.</p>
+                <a href="#shop" class="hero-cta-btn">EXPLORE NOW &rarr;</a>
+              </div>
+              <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1200&q=80" alt="Minimalist Bag">
+              </div>
+            </div>
+
+            <div class="hero-slide">
+              <div class="hero-content">
+                <span class="hero-label">Worldwide Delivery Privilege</span>
+                <h1 class="hero-title">COMPLIMENTARY<br>SHIPPING $75+</h1>
+                <p class="hero-desc">Enjoy free climate-conscious shipping on all curated orders over $75, wrapped in traditional Hanji packaging.</p>
+                <a href="#shop" class="hero-cta-btn">LEARN PRIVILEGES &rarr;</a>
+              </div>
+              <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?auto=format&fit=crop&w=1200&q=80" alt="Packaging Craft">
+              </div>
+            </div>
+
+            <div class="hero-slide">
+              <div class="hero-content">
+                <span class="hero-label">Flagship Store Experience</span>
+                <h1 class="hero-title">OFFLINE STORE<br>GRAND OPENING</h1>
+                <p class="hero-desc">Visit our tranquil Seoul flagship space in Hannam-dong. Touch the crafts, sip artisan teas, and experience tea rituals.</p>
+                <a href="visit_us.html" class="hero-cta-btn">VISIT STORE &rarr;</a>
+              </div>
+              <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80" alt="Flagship Studio">
+              </div>
+            </div>
+
+            <div class="hero-slide">
+              <div class="hero-content">
+                <span class="hero-label">Pure Herbal Synergy</span>
+                <h1 class="hero-title">BOTANICAL<br>RESTORATION</h1>
+                <p class="hero-desc">Gentle daily barrier care enriched with centuries-old Korean Hanbang fermentation science.</p>
+                <a href="#shop" class="hero-cta-btn">SHOP FORMULAS &rarr;</a>
+              </div>
+              <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1200&q=80" alt="Botanical Skincare">
+              </div>
+            </div>
+
+            <div class="hero-slide">
+              <div class="hero-content">
+                <span class="hero-label">Living & Crafts</span>
+                <h1 class="hero-title">TIMELESS<br>CERAMICS</h1>
+                <p class="hero-desc">Elevate your living moments with hand-thrown Moon Jars, celadon tea sets, and woodenware.</p>
+                <a href="#shop" class="hero-cta-btn">VIEW CRAFTS &rarr;</a>
+              </div>
+              <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=1200&q=80" alt="Ceramics">
+              </div>
+            </div>
+
+            <div class="hero-slide">
+              <div class="hero-content">
+                <span class="hero-label">Fermented Culinary Soul</span>
+                <h1 class="hero-title">ARTISAN PANTRY<br>ESSENTIALS</h1>
+                <p class="hero-desc">Aged gochujang, unrefined sesame oils, and wild mountain tea leaves sourced directly from small-batch producers.</p>
+                <a href="#shop" class="hero-cta-btn">EXPLORE PANTRY &rarr;</a>
+              </div>
+              <div class="hero-visual">
+                <img src="image/핑크 억새밭 속 내추럴 스킨케어 바구니.png" alt="Pantry Essentials">
+              </div>
+            </div>
+
+            <div class="hero-slide">
+              <div class="hero-content">
+                <span class="hero-label">Mindful Gifting</span>
+                <h1 class="hero-title">BOJAGI GIFT<br>COLLECTION</h1>
+                <p class="hero-desc">Send sincere blessings wrapped in exquisite silk Bojagi knotting, custom tailored for your precious moments.</p>
+                <a href="#shop" class="hero-cta-btn">DISCOVER GIFTS &rarr;</a>
+              </div>
+              <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80" alt="Bojagi Gift Wrapping">
+              </div>
+            </div>
+
+
+             <div class="hero-slide">
+              <!-- <div class="hero-content">
+                <span class="hero-label">Mindful Gifting</span>
+                <h1 class="hero-title">BOJAGI GIFT<br>COLLECTION</h1>
+                <p class="hero-desc">Send sincere blessings wrapped in exquisite silk Bojagi knotting, custom tailored for your precious moments.</p>
+                <a href="#shop" class="hero-cta-btn">DISCOVER GIFTS &rarr;</a>
+              </div> -->
+              <div class="hero-visual">
+                <img src="image/3000_1172.png" alt="Bojagi Gift Wrapping">
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Arrows & Dots -->
+          <button class="hero-nav-arrow hero-nav-prev" id="heroPrevBtn" aria-label="Previous Slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <button class="hero-nav-arrow hero-nav-next" id="heroNextBtn" aria-label="Next Slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+
+          <div class="hero-pagination" id="heroPagination">
+            <div class="pagination-dot active" data-index="0"></div>
+            <div class="pagination-dot" data-index="1"></div>
+            <div class="pagination-dot" data-index="2"></div>
+            <div class="pagination-dot" data-index="3"></div>
+            <div class="pagination-dot" data-index="4"></div>
+            <div class="pagination-dot" data-index="5"></div>
+            <div class="pagination-dot" data-index="6"></div>
+          </div>
+        </div>
+
+        <!-- 4 Sub-Category Cards -->
+        <div class="hero-sub-categories">
+          <a href="#" class="sub-cat-card">
+            <div class="sub-cat-img-box">
+              <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=150&q=80" alt="K-Beauty">
+            </div>
+            <div class="sub-cat-meta">
+              <span class="sub-cat-title">K-Beauty</span>
+              <span class="sub-cat-tag">Hydration & Glow</span>
+            </div>
+          </a>
+          <a href="#" class="sub-cat-card">
+            <div class="sub-cat-img-box">
+              <img src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=150&q=80" alt="Pantry & Food">
+            </div>
+            <div class="sub-cat-meta">
+              <span class="sub-cat-title">Pantry & Food</span>
+              <span class="sub-cat-tag">Artisan Flavors</span>
+            </div>
+          </a>
+          <a href="#" class="sub-cat-card">
+            <div class="sub-cat-img-box">
+              <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=150&q=80" alt="Living & Craft">
+            </div>
+            <div class="sub-cat-meta">
+              <span class="sub-cat-title">Living & Craft</span>
+              <span class="sub-cat-tag">Handmade Ceramics</span>
+            </div>
+          </a>
+          <a href="#" class="sub-cat-card">
+            <div class="sub-cat-img-box">
+              <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=150&q=80" alt="Curated Gifts">
+            </div>
+            <div class="sub-cat-meta">
+              <span class="sub-cat-title">Curated Gifts</span>
+              <span class="sub-cat-tag">Special Editions</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. BEST SELLERS SECTION -->
+    <section class="section-wrap" id="shop">
+      <div class="container">
+        <div class="section-heading-center">
+          <h2 class="section-title">Best Sellers</h2>
+          <p class="section-subtitle">Our most cherished everyday essentials curated for balanced living</p>
+        </div>
+
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-thumb-wrap">
+              <span class="badge-tag">BEST 01</span>
+              <button class="wish-toggle" aria-label="Add to wishlist"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+              <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80" alt="Cleanser">
+              <button class="add-to-cart-overlay-btn" onclick="addToCart('Green Plum Refreshing Cleanser')">Add to Cart</button>
+            </div>
+            <div class="product-info">
+              <div>
+                <div class="product-brand">Beauty of Joseon</div>
+                <h3 class="product-name">Green Plum Refreshing Cleanser 100ml</h3>
+              </div>
+              <div class="product-price-box">
+                <span class="price-current">$18.00</span>
+                <span class="price-original">$22.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-thumb-wrap">
+              <span class="badge-tag">BEST 02</span>
+              <button class="wish-toggle" aria-label="Add to wishlist"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+              <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80" alt="Birch Juice Moisturizing Cream">
+              <button class="add-to-cart-overlay-btn" onclick="addToCart('Birch Juice Moisturizing Cream')">Add to Cart</button>
+            </div>
+            <div class="product-info">
+              <div>
+                <div class="product-brand">Round Lab</div>
+                <h3 class="product-name">Birch Juice Moisturizing Cream 80ml</h3>
+              </div>
+              <div class="product-price-box">
+                <span class="price-current">$24.00</span>
+                <span class="price-original">$28.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-thumb-wrap">
+              <span class="badge-tag">BEST 03</span>
+              <button class="wish-toggle" aria-label="Add to wishlist"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+              <img src="https://images.unsplash.com/photo-1608248597359-009765691d17?auto=format&fit=crop&w=600&q=80" alt="Ginseng Essence Water">
+              <button class="add-to-cart-overlay-btn" onclick="addToCart('Ginseng Essence Water 150ml')">Add to Cart</button>
+            </div>
+            <div class="product-info">
+              <div>
+                <div class="product-brand">Beauty of Joseon</div>
+                <h3 class="product-name">Ginseng Essence Water 150ml Hydrating Toner</h3>
+              </div>
+              <div class="product-price-box">
+                <span class="price-current">$19.50</span>
+                <span class="price-original">$23.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-thumb-wrap">
+              <span class="badge-tag">BEST 04</span>
+              <button class="wish-toggle" aria-label="Add to wishlist"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+              <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Celadon Tea Cup">
+              <button class="add-to-cart-overlay-btn" onclick="addToCart('Craft Celadon Tea Cup')">Add to Cart</button>
+            </div>
+            <div class="product-info">
+              <div>
+                <div class="product-brand">Studio Icheon</div>
+                <h3 class="product-name">Craft Celadon Hand-glazed Tea Cup & Saucer</h3>
+              </div>
+              <div class="product-price-box">
+                <span class="price-current">$32.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-more-wrap">
+          <button class="btn-circle-expand" aria-label="Load more products" onclick="showToast('Loading additional best sellers...')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PROMOTION BANNER 1: K-JEON FEAST (230px) -->
+    <section class="promo-banner-section">
+      <div class="container">
+        <div class="promo-banner-card">
+          <div class="promo-banner-left">
+            <div class="promo-badge">Seasonal Curation</div>
+            <h3 class="promo-title">K-Jeon Feast & Artisan Pairing</h3>
+            <p class="promo-desc">Comforting traditional savory pancakes crafted with fresh heritage herbs and seasonal pantry essentials.</p>
+          </div>
+          <div class="promo-banner-right">
+            <img src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80" alt="Savory Korean Feast">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. WHAT'S NEW SECTION -->
+    <section class="section-wrap">
+      <div class="container">
+        <div class="section-heading-center">
+          <h2 class="section-title">What's New</h2>
+          <p class="section-subtitle">Newly arrived seasonal finds curated fresh this week</p>
+        </div>
+
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-thumb-wrap">
+              <button class="wish-toggle" aria-label="Add to wishlist"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+              <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80" alt="Spotty Protection Patches">
+              <button class="add-to-cart-overlay-btn" onclick="addToCart('MEDIFORDEAR Spotty Patches')">Add to Cart</button>
+            </div>
+            <div class="product-info">
+              <div>
+                <div class="product-brand">MEDIFORDEAR</div>
+                <h3 class="product-name">MEDIFORDEAR Spotty Protection Patches, 105 Count – Cica + Heartleaf</h3>
+              </div>
+              <div class="product-price-box">
+                <span class="price-current">$9.44</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-thumb-wrap">
+              <button class="wish-toggle" aria-label="Add to wishlist"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+              <img src="https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?auto=format&fit=crop&w=600&q=80" alt="Roll Top Cotton Socks">
+              <button class="add-to-cart-overlay-btn" onclick="addToCart('FEETO Roll Top Cotton Socks')">Add to Cart</button>
+            </div>
+            <div class="product-info">
+              <div>
+                <div class="product-brand">FEETO</div>
+                <h3 class="product-name">FEETO Women's Roll Top Cotton Socks, 6 Pairs, Size 5–9</h3>
+              </div>
+              <div class="product-price-box">
+                <span class="price-current">$19.99</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-thumb-wrap">
+              <button class="wish-toggle" aria-label="Add to wishlist"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" alt="Chamomile Mask">
+              <button class="add-to-cart-overlay-btn" onclick="addToCart('HYGGEE Relief Chamomile Mask')">Add to Cart</button>
+            </div>
+            <div class="product-info">
+              <div>
+                <div class="product-brand">HYGGEE</div>
+                <h3 class="product-name">HYGGEE Relief Chamomile Mask 95ml – Soothing Hydrating Wash-Off Mask</h3>
+              </div>
+              <div class="product-price-box">
+                <span class="price-current">$22.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-thumb-wrap">
+              <button class="wish-toggle" aria-label="Add to wishlist"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+              <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80" alt="Retinal Eye Cream">
+              <button class="add-to-cart-overlay-btn" onclick="addToCart('SEOUL 1988 Eye Cream')">Add to Cart</button>
+            </div>
+            <div class="product-info">
+              <div>
+                <div class="product-brand">SEOUL 1988</div>
+                <h3 class="product-name">SEOUL 1988 Eye Cream : Retinal Liposome 4% + Fermented Bean</h3>
+              </div>
+              <div class="product-price-box">
+                <span class="price-current">$22.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-more-wrap">
+          <button class="btn-circle-expand" aria-label="Load more new arrivals" onclick="showToast('Loading more new arrivals...')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PROMOTION BANNER 2: KOMBUCHA MAGIC (230px) -->
+    <!-- <section class="spotlight-banner-section"> 
+      <div class="container">
+        <!-- <div class="spotlight-banner-card">
+          <div class="spotlight-text-side">
+            <span class="spotlight-tag">Biome Innovation</span>
+            <h2 class="spotlight-title">Kombucha-Powered<br>Biome Magic</h2>
+            <p class="spotlight-desc">Unlocking healthy skin resilience through 506 hours of slow, low-temperature natural tea fermentation. Balances pH while preserving deep moisture.</p>
+            <div class="spotlight-stat">
+              <div class="stat-number">404</div>
+              <div class="stat-caption">hours of heritage slow fermentation per batch</div>
+            </div>
+          </div> -->
+          <!-- <div class="spotlight-media-side">
+            <img src="image/Gemini_Generated_Image_4gr7hv4gr7hv4gr7.png" alt="Cooling Collagen Hydrogel Eye Patch">
+          </div>
+        </div>
+      </div>
+    </section> --> 
+
+    <section class="promo-banner-section"> 
+      <div class="container">
+        <!-- 링크를 걸고 싶은 경우 <a> 태그로 감싸주세요 -->
+        <a href="#" class="promo-banner-card full-image-banner">
+          <img src="image/Gemini_Generated_Image_4gr7hv4gr7hv4gr7.png" alt="Cooling Collagen Hydrogel Eye Patch">
+        </a>
+      </div>
+  </section>
+  
+
+    <!-- 6. CURATOR'S PICKS SECTION -->
+    <section class="section-wrap">
+      <div class="container">
+        <div class="section-heading-center">
+          <h2 class="section-title">Curator's Picks</h2>
+          <p class="section-subtitle">Exquisite craft works hand-selected by Seoul lifestyle editors</p>
+        </div>
+
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-thumb-wrap">
+              <span class="badge-tag badge-curated">CURATED</span>
+              <button class="wish-toggle" aria-label="Add to wishlist"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+              <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=600&q=80" alt="White Porcelain Incense Burner">
+              <button class="add-to-cart-overlay-btn" onclick="addToCart('White Porcelain Incense Burner')">Add to Cart</button>
+            </div>
+            <div class="product-info">
+              <div>
+                <div class="product-brand">ICHEON CRAFT LAB</div>
+                <h3 class="product-name">White Porcelain Mini Moon Jar Incense Burner</h3>
+              </div>
+              <div>
+                <div class="product-price-box"><span class="price-current">$38.00</span></div>
+                <div class="rating-row"><span>&#9733; 5.0</span><span class="rating-count">(94)</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-thumb-wrap">
+              <span class="badge-tag badge-curated">CURATED</span>
+              <button class="wish-toggle" aria-label="Add to wishlist"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+              <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Najeonchilgi Tray">
+              <button class="add-to-cart-overlay-btn" onclick="addToCart('Handcrafted Najeonchilgi Tray')">Add to Cart</button>
+            </div>
+            <div class="product-info">
+              <div>
+                <div class="product-brand">TONGYEONG LACQUER</div>
+                <h3 class="product-name">Handcrafted Najeonchilgi Mother-of-Pearl Tray</h3>
+              </div>
+              <div>
+                <div class="product-price-box"><span class="price-current">$65.00</span></div>
+                <div class="rating-row"><span>&#9733; 4.9</span><span class="rating-count">(68)</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-thumb-wrap">
+              <button class="wish-toggle" aria-label="Add to wishlist"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+              <img src="https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?auto=format&fit=crop&w=600&q=80" alt="Ramie Table Runner">
+              <button class="add-to-cart-overlay-btn" onclick="addToCart('Washed Ramie Table Runner')">Add to Cart</button>
+            </div>
+            <div class="product-info">
+              <div>
+                <div class="product-brand">MORAN LIVING</div>
+                <h3 class="product-name">Washed Ramie Table Runner Natural Sand</h3>
+              </div>
+              <div>
+                <div class="product-price-box"><span class="price-current">$32.00</span></div>
+                <div class="rating-row"><span>&#9733; 4.8</span><span class="rating-count">(112)</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-thumb-wrap">
+              <button class="wish-toggle" aria-label="Add to wishlist"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" alt="Ceramic Tea Cup & Strainer">
+              <button class="add-to-cart-overlay-btn" onclick="addToCart('Artisan Ceramic Tea Cup Set')">Add to Cart</button>
+            </div>
+            <div class="product-info">
+              <div>
+                <div class="product-brand">HADONG TEA HOUSE</div>
+                <h3 class="product-name">Artisan Ceramic Tea Cup & Strainer Gift Set</h3>
+              </div>
+              <div>
+                <div class="product-price-box"><span class="price-current">$48.00</span></div>
+                <div class="rating-row"><span>&#9733; 4.9</span><span class="rating-count">(156)</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-more-wrap">
+          <button class="btn-circle-expand" aria-label="Load more curator picks" onclick="showToast('Loading more curated picks...')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. LATEST STORIES SLIDER -->
+    <section class="stories-section">
+      <div class="container">
+        <div class="stories-top-bar">
+          <div class="stories-heading-group">
+            <h2 class="stories-main-title">LATEST STORIES</h2>
+            <span class="stories-sub-text">Seoul Living, Art & Culture Magazine</span>
+          </div>
+          <div class="stories-nav-arrows">
+            <button class="stories-arrow-btn" id="storyPrevBtn" aria-label="Previous Stories">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button class="stories-arrow-btn" id="storyNextBtn" aria-label="Next Stories">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="stories-scroll-box" id="storiesTrack">
+          <div class="story-card-item">
+            <img class="story-card-bg" src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="야간 미식 야시장">
+            <div class="story-card-overlay">
+              <span class="story-cat-tag">SEOUL LIFE</span>
+              <h3 class="story-item-title">야간 미식 야시장 탐방</h3>
+              <p class="story-item-summary">달빛 아래 피어나는 서울의 골목길 야시장과 장인들의 즉석 미식 레시피.</p>
+              <div class="story-item-meta"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><span>5 min read • Oct 28</span></div>
+            </div>
+          </div>
+
+          <div class="story-card-item">
+            <img class="story-card-bg" src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=600&q=80" alt="백자의 고요한 울림, 달항아리">
+            <div class="story-card-overlay">
+              <span class="story-cat-tag">CRAFT & HERITAGE</span>
+              <h3 class="story-item-title">백자의 고요한 울림, 달항아리</h3>
+              <p class="story-item-summary">조선의 순백 미학과 현대 리빙 공간에 은은하게 스며드는 무심한 형태미.</p>
+              <div class="story-item-meta"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><span>4 min read • Oct 24</span></div>
+            </div>
+          </div>
+
+          <div class="story-card-item">
+            <img class="story-card-bg" src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" alt="북촌 한옥에서 즐기는 다도">
+            <div class="story-card-overlay">
+              <span class="story-cat-tag">TEA RITUAL</span>
+              <h3 class="story-item-title">북촌 한옥에서 즐기는 다도</h3>
+              <p class="story-item-summary">계절의 변화를 차 한 잔에 담아 음미하는 한국 전통 다례의 사색적 시간.</p>
+              <div class="story-item-meta"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><span>6 min read • Oct 20</span></div>
+            </div>
+          </div>
+
+          <div class="story-card-item">
+            <img class="story-card-bg" src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="한남 플래그십 아틀리에">
+            <div class="story-card-overlay">
+              <span class="story-cat-tag">SPACE & DESIGN</span>
+              <h3 class="story-item-title">한남 플래그십 아틀리에 공간</h3>
+              <p class="story-item-summary">빛과 한지, 흙의 질감을 살려 서울의 옛 정취를 현대적으로 재해석한 공간 이야기.</p>
+              <div class="story-item-meta"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><span>4 min read • Oct 16</span></div>
+            </div>
+          </div>
+
+          <div class="story-card-item">
+            <img class="story-card-bg" src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=600&q=80" alt="전통 장인의 30년 간장">
+            <div class="story-card-overlay">
+              <span class="story-cat-tag">PANTRY ROOTS</span>
+              <h3 class="story-item-title">전통 장인의 30년 숙성 간장</h3>
+              <p class="story-item-summary">순창 옹기에서 햇볕과 바람으로 빚어낸 천연 감칠맛의 정수를 찾아 떠난 여정.</p>
+              <div class="story-item-meta"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><span>7 min read • Oct 11</span></div>
+            </div>
+          </div>
+
+          <div class="story-card-item">
+            <img class="story-card-bg" src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80" alt="서촌 골목길 예술 산책">
+            <div class="story-card-overlay">
+              <span class="story-cat-tag">LOCAL WALKS</span>
+              <h3 class="story-item-title">서촌 골목길 예술 산책</h3>
+              <p class="story-item-summary">인왕산 자락 아래 소담한 갤러리와 젊은 공예가들의 작업실이 숨어있는 길.</p>
+              <div class="story-item-meta"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><span>5 min read • Oct 05</span></div>
+            </div>
+          </div>
+
+          <div class="story-card-item">
+            <img class="story-card-bg" src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80" alt="비단 보자기 매듭 문화">
+            <div class="story-card-overlay">
+              <span class="story-cat-tag">LIVING ART</span>
+              <h3 class="story-item-title">비단 보자기 매듭 문화의 깊이</h3>
+              <p class="story-item-summary">마음을 싸서 전한다는 옛 조상들의 다정한 배려, 보자기 아트의 재조명.</p>
+              <div class="story-item-meta"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg><span>3 min read • Sep 29</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main-grid">
+        <div class="footer-brand">
+          <h2>KGallery</h2>
+          <p>Connecting conscious global homes with authentic Korean artisans, clean beauty innovators, and mindful craft traditions.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="https://k-gallery.com/shop/collections/new-arrivals">New Arrivals</a></li>
+            <li><a href="https://k-gallery.com/shop/brands">Featured Brands</a></li>
+            <li><a href="https://k-gallery.com/shop/collections/all-items">Shop All</a></li>
+            <li><a href="https://k-gallery.com/shop/collections/sale">Seasonal Offers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Client Care</h4>
+          <ul class="footer-links">
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Authenticity Guarantee</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Join The Journal</h4>
+          <p style="font-size: 13.5px; color: #8C8C8C; margin-bottom: 12px;">Get weekly stories on design, artisan recipes, and exclusive seasonal releases.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed to the journal!');">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 KGallery Seoul. All rights reserved.</div>
+        <div>Designed for Mindful Living</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="cart-toast" id="cartToast">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span id="toastMsg">Added to your bag</span>
+  </div>
+
+  <!-- 분리된 외부 JS 파일 연결 -->
+  <script src="script.js"></script>
+</body>
+</html>
