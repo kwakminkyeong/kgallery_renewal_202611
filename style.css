@@ -61,23 +61,13 @@ img {
   width: 100%;
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 0px;
 }
 
 /* =========================================
    2. TOP UTILITY BAR & HEADER
 ========================================= */
-.top-announcement {
-  background-color: #F3EFE8;
-  border-bottom: 1px solid var(--border-light);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-align: center;
-  padding: 9px 16px;
-  color: #666;
-  text-transform: uppercase;
-}
+
 
 .site-header {
   background-color: var(--bg-cream);
@@ -1541,4 +1531,1244 @@ img {
   .header-inner {
     height: 64px; /* 모바일에서는 헤더 높이를 살짝 줄여줌 */
   }
+}
+
+
+/* ========================================================
+   K-Gun Story Mini Ticker Banner
+   Font: Montserrat (Primary)
+   ======================================================== */
+
+.kgun-story-ticker {
+  width: 100%;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.ticker-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background-color: #f7f3ec; /* 은은한 오트밀/웜 베이지 */
+  border: 1px solid #ede4d6;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #2b2b2b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  transition: all 0.25s ease;
+  overflow: hidden;
+}
+
+.ticker-inner:hover {
+  background-color: #f2ece1;
+  border-color: #e0d5c3;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.ticker-content {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* K-Gun Avatar Bubble */
+.ticker-avatar-wrap {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #e8dfcf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.ticker-avatar {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+}
+
+.ticker-inner:hover .ticker-avatar {
+  transform: rotate(-6deg) scale(1.08);
+}
+
+/* Typography */
+.ticker-message {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13.5px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ticker-highlight {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.ticker-sub {
+  font-weight: 500;
+  color: #666;
+}
+
+/* Action Link & Arrow */
+.ticker-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e5dcce;
+  transition: all 0.2s ease;
+}
+
+.ticker-arrow {
+  transition: transform 0.2s ease;
+}
+
+.ticker-inner:hover .ticker-link-btn {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-color: #1a1a1a;
+}
+
+.ticker-inner:hover .ticker-arrow {
+  transform: translateX(3px);
+}
+
+
+
+/* ========================================================
+   Split Top Announcement Bar & K-Gun Story Link
+   ======================================================== */
+
+.top-announcement {
+  background-color: #f7f3ec; /* 은은한 웜 아이보리/베이지 */
+  border-bottom: 1px solid #ede4d6;
+  padding: 8px 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+}
+
+.announcement-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* 좌측 텍스트 영역 */
+.announcement-left {
+  font-size: 11.5px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: #4a4a4a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 우측 케이군 스토리 링크 영역 */
+.announcement-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #1a1a1a;
+  flex-shrink: 0;
+  transition: opacity 0.2s ease;
+}
+
+.announcement-right:hover {
+  opacity: 0.85;
+}
+
+/* 케이군 미니 원형 아바타 */
+.announcement-avatar-wrap {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #e2d8c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.announcement-avatar {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.announcement-story-text {
+  font-size: 11.5px;
+  color: #555555;
+  white-space: nowrap;
+}
+
+.announcement-story-text strong {
+  color: #111111;
+  font-weight: 700;
+}
+
+/* 미니 Read Story 뱃지 */
+.announcement-story-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 12px;
+  letter-spacing: 0.02em;
+  transition: background-color 0.2s ease;
+}
+
+.announcement-right:hover .announcement-story-badge {
+  background-color: #333333;
+}
+
+.badge-arrow {
+  transition: transform 0.2s ease;
+}
+
+.announcement-right:hover .badge-arrow {
+  transform: translateX(2px);
+}
+
+
+/* ========================================================
+   4. ABOUT K-GALLERY PAGE STYLING (Append to style.css)
+   ======================================================== */
+
+.about-page {
+  background-color: #FAF8F5; /* 브랜드 맞춤형 미색 배경 */
+  font-family: 'Montserrat', sans-serif;
+  color: #2b2b2b;
+}
+
+.about-section {
+  padding: 80px 0;
+}
+
+.section-center-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 48px auto;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #1A1A1A;
+  letter-spacing: -0.01em;
+  margin-bottom: 16px;
+}
+
+.section-desc {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #666666;
+}
+
+/* 1) Hero Area Styling */
+.about-hero {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #F5EFE6 0%, #FAF8F5 100%);
+  border-bottom: 1px solid #ECE6DB;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.hero-text-content {
+  flex: 1.1;
+  max-width: 550px;
+}
+
+.hero-text-content .sub-label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #C97A5B; /* 테라코타 컬러 */
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.hero-title {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.18;
+  color: #111111;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+.hero-desc {
+  font-size: 15px;
+  line-height: 1.68;
+  color: #555555;
+  margin-bottom: 30px;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 12px;
+}
+
+.hero-visual {
+  flex: 0.9;
+  text-align: right;
+  position: relative;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* 2) Curation banner */
+/* Curation Banner 중앙 정렬 및 반응형 수정 */
+.curation-banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto 0 auto;
+}
+
+.curation-img {
+  display: block;
+  width: 100%;
+  max-width: 960px; /* 컨테이너 안에서 균형 잡힌 가로 너비 */
+  height: auto;
+  margin: 0 auto; /* 완벽한 가로 중앙 정렬 */
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); /* 은은한 입체감 (선택 사항) */
+}
+
+/* 3) Stories Section Cards */
+.stories-section .deco-bar {
+  display: block;
+  width: 32px;
+  height: 3px;
+  background-color: #C97A5B;
+  margin: 0 auto 16px auto;
+}
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.story-card {
+  background-color: #ffffff;
+  border: 1px solid #ECE6DB;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.story-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.card-img-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.card-img-wrap img {
+ width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.story-card:hover .card-img-wrap img {
+  transform: scale(1.04);
+}
+
+
+/* 1. 뷰티 사진: 장식장 안 화장품이 센터에 오도록 하단 영역에 초점 고정 */
+.story-img-beauty {
+  object-position: center bottom; /* 또는 center 85% */
+}
+
+/* 2. 음식 사진: 뚝배기 음식이 프레임 정중앙에 오도록 위치 조정 */
+.story-img-food {
+  object-position: center 75%; /* 수치가 클수록 아래쪽 뚝배기 내용물이 화면 중앙으로 올라옵니다 */
+}
+
+/* 3. 여행 사진: 기본 중앙(또는 필요시 조정) */
+.story-img-travel {
+  object-position: center center;
+}
+
+.card-footer {
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 14.5px;
+  color: #1A1A1A;
+}
+
+.card-footer .arrow {
+  transition: transform 0.2s ease;
+}
+
+.story-card:hover .arrow {
+  transform: translateX(3px);
+}
+
+/* 4) Trust Grid Badge style */
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid #E3DCCF;
+  border-bottom: 1px solid #E3DCCF;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.trust-item {
+  padding: 0 24px;
+  position: relative;
+}
+
+.trust-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background-color: #E2DACD;
+}
+
+.trust-icon {
+  margin-bottom: 16px;
+  display: inline-flex;
+}
+
+.trust-item h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2B2B2B;
+}
+
+/* 5) Footer CTA Area */
+.cta-card-banner {
+  background-color: #F7EDE2;
+  background-image: url('image/about\ 03.png');
+  background-repeat: no-repeat;
+  background-position: right center; /* 케이군이 우측에 오도록 고정 */
+  background-size: contain;           /* 높이에 맞춰 비율 유지 */
+  border-radius: 24px;
+  padding: 56px 64px;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-content {
+  max-width: 540px; /* 텍스트가 우측 케이군 캐릭터를 침범하지 않도록 제한 */
+  z-index: 2;
+}
+
+.left-bar {
+  display: block;
+  width: 32px;
+  height: 3px;
+  background-color: #C97A5B;
+  margin-bottom: 14px;
+}
+
+.cta-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 12px;
+  line-height: 1.25;
+}
+
+.cta-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555555;
+  margin-bottom: 28px;
+}
+
+.cta-btn-group {
+  display: flex;
+  gap: 12px;
+}
+
+.cta-character {
+  flex: 0.8;
+  text-align: right;
+}
+
+.cta-char-img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Buttons */
+.btn-primary, .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #1A1A1A;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #333333;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #1A1A1A;
+  border: 1px solid #D9D2C9;
+}
+
+.btn-secondary:hover {
+  background-color: #F4EDE4;
+}
+
+/* ========================================================
+   About Page Media Queries (Mobile & Tablet)
+   ======================================================== */
+@media (max-width: 991px) {
+  .about-hero {
+    padding: 60px 0;
+  }
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
+  }
+  .hero-text-content {
+    max-width: 100%;
+  }
+  .hero-btns {
+    justify-content: center;
+  }
+  .hero-visual {
+    text-align: center;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .stories-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin: 30px auto 0 auto;
+  }
+  .cta-card-banner {
+    flex-direction: column-reverse;
+    padding: 44px 28px;
+    text-align: center;
+  }
+  .cta-btn-group {
+    justify-content: center;
+  }
+  .cta-character {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 32px;
+  }
+  .hero-desc {
+    font-size: 14px;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+  .trust-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 30px 0;
+  }
+  .trust-item:not(:last-child)::after {
+    display: none;
+  }
+}
+
+/* ========================================================
+   Social Review & Attached Product Carousel
+   ======================================================== */
+
+.social-review-section {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 80px 0 100px 0;
+  background-color: #FAF8F5;
+  overflow: hidden;
+}
+
+.review-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 36px;
+}
+
+.review-sub-title {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #C97A5B;
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+}
+
+.review-main-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: #1a1a1a;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.review-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+/* Nav Arrows */
+.carousel-nav-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.c-nav-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #E0D7C9;
+  background-color: #ffffff;
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.c-nav-btn:hover {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-color: #1a1a1a;
+}
+
+/* Carousel Outer & Track */
+.review-carousel-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 40px 0;
+  user-select: none;
+  cursor: grab;
+}
+
+.review-carousel-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.review-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  align-items: center;
+  padding: 0; /* 좌우 패딩을 0으로 설정해 카드가 끝까지 채워지도록 함 */
+}
+
+/* 1 Item Card (Media + Product) */
+.review-item-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex-shrink: 0;
+  /* 스크롤 시 화면 중앙에 딱 맞물림 */
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  transform: scale(0.92);
+  opacity: 0.65;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s ease;
+}
+
+/* Media Box (세로 비율 9:16) */
+.review-item-card .media-box {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: #eee;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.review-item-card .media-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.review-item-card:hover .media-box img {
+  transform: scale(1.04);
+}
+
+.media-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+/* Attached Product Card (1:1 하단 부착 상품) */
+.attached-product-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background-color: #ffffff;
+  border: 1px solid #ECE4D8;
+  border-radius: 14px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.attached-product-card:hover {
+  border-color: #C97A5B;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.prod-thumb {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fafafa;
+  flex-shrink: 0;
+}
+
+.prod-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prod-meta {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.prod-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10.5px;
+  color: #888;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.prod-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #222;
+  margin: 2px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.prod-price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.prod-arrow {
+  font-size: 14px;
+  color: #bbb;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.attached-product-card:hover .prod-arrow {
+  color: #1a1a1a;
+  transform: translateX(3px);
+}
+
+/* ========================================================
+   Responsive Media Queries (Top Announcement & Social Reviews)
+   ======================================================== */
+
+
+
+/* 태블릿 (1024px 이하) */
+@media (max-width: 1024px) {
+  /* Top Announcement */
+  .announcement-left {
+    font-size: 10.5px;
+  }
+  
+  .announcement-story-text {
+    font-size: 10.5px;
+  }
+
+  .announcement-story-text strong {
+    display: none; /* 공간 확보를 위해 강조 문구 숨김 */
+  }
+}
+
+/* 모바일 (768px 이하) */
+@media (max-width: 768px) {
+  /* 1. Top Announcement Bar */
+  .top-announcement {
+    padding: 6px 0;
+  }
+
+  .announcement-inner {
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    text-align: center;
+  }
+
+  .announcement-left {
+    font-size: 10px;
+    letter-spacing: 0.01em;
+  }
+
+  .announcement-right {
+    padding-top: 4px;
+    border-top: 1px dashed #e5dcce;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .announcement-story-text {
+    font-size: 11px;
+  }
+
+  .announcement-story-text strong {
+    display: inline;
+  }
+
+  /* 2. Social Review Carousel */
+  .social-review-section {
+    padding: 54px 0;
+  }
+
+  .review-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .carousel-nav-btns {
+    display: none; /* 모바일은 스와이프 터치로 탐색 */
+  }
+
+  .review-item-card {
+    width: 190px;
+  }
+
+  .review-item-card .media-box {
+    height: 290px;
+  }
+}
+
+/* ========================================================
+   Social Review Carousel (Center Zoom & Drag/Swipe)
+   ======================================================== */
+
+.social-review-section {
+  padding: 80px 0 90px 0;
+  background-color: #FAF8F5;
+  overflow: hidden;
+}
+
+/* 1. 상단 타이틀 완벽 중앙 정렬 */
+.review-section-header.center-aligned {
+  display: flex !important;
+  flex-direction: column !important; /* 가로 나열 해제 -> 세로 스택 */
+  align-items: center !important;     /* 가로 중앙 정렬 */
+  justify-content: center !important;
+  text-align: center !important;
+  max-width: 740px;
+  margin: 0 auto 44px auto;
+  width: 100%;
+}
+
+.review-sub-title {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #C97A5B;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.review-main-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #1A1A1A;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.review-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14.5px;
+  color: #666666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* 2. 캐러셀 외곽 & 내비게이션 버튼 배치 */
+.carousel-outer-container {
+  position: relative;
+  width: 100%;
+}
+
+.c-nav-btn {
+  position: absolute;
+  top: 42%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #E2D9CC;
+  background-color: #FFFFFF;
+  color: #1a1a1a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.c-nav-btn:hover {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-color: #1a1a1a;
+  transform: translateY(-50%) scale(1.06);
+}
+
+.c-nav-btn.prev-btn { left: -16px; }
+.c-nav-btn.next-btn { right: -16px; }
+
+/* 3. 스와이프 트랙 래퍼 */
+.review-carousel-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  /* 가운데 확대 카드가 위아래로 잘리지 않도록 여백 확보 */
+  padding: 30px 10px 30px 10px;
+  cursor: grab;
+  user-select: none;
+}
+
+.review-carousel-wrapper.active-drag {
+  cursor: grabbing;
+  scroll-behavior: auto; /* 드래그 중에는 부드러운 스크롤 해제 */
+}
+
+.review-carousel-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.review-track {
+  display: flex;
+  gap: 22px;
+  width: max-content;
+  align-items: center;
+}
+
+/* 4. 개별 카드 유닛 & 센터 줌 (Tree Hut 스타일) */
+.review-item-card {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+  transform: scale(0.92); /* 기본 양옆 카드는 살짝 축소 및 투명도 */
+  opacity: 0.65;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s ease;
+}
+
+/* 가운데 포커스된 카드 (Active Center) */
+.review-item-card.is-center {
+ transform: scale(1.08);
+  opacity: 1;
+  z-index: 5;
+}
+
+/* 상단 미디어 박스 */
+.review-item-card .media-box {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #EFE9DE;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.review-item-card.is-center .media-box {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.review-item-card .media-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.media-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(18, 18, 18, 0.6);
+  backdrop-filter: blur(4px);
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+/* 하단 1:1 상품 카드 */
+.attached-product-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background-color: #FFFFFF;
+  border: 1px solid #ECE3D5;
+  border-radius: 14px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.review-item-card.is-center .attached-product-card {
+  border-color: #C97A5B;
+  box-shadow: 0 6px 18px rgba(201, 122, 91, 0.12);
+}
+
+.prod-thumb {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #FAF8F5;
+  flex-shrink: 0;
+}
+
+.prod-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prod-meta {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.prod-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9.5px;
+  color: #8C8C8C;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.prod-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #1A1A1A;
+  margin: 1px 0 2px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.prod-price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.prod-arrow {
+  font-size: 13px;
+  color: #C5BCB0;
+  transition: transform 0.2s ease;
+}
+
+.review-item-card.is-center .prod-arrow {
+  color: #C97A5B;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .c-nav-btn { display: none; }
+  .review-item-card {
+    width: 190px;
+  }
+  .review-item-card .media-box {
+    height: 290px;
+  }
+  .review-main-title {
+    font-size: 22px;
+  }
+}
+
+/* 1. 서브 타이틀 (오렌지/테라코타 라벨) */
+.review-section-header.center-aligned .review-sub-title {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #C97A5B;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+/* 2. 메인 타이틀 */
+.review-section-header.center-aligned .review-main-title {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #1A1A1A;
+  letter-spacing: -0.02em;
+  line-height: 1.28;
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+/* 3. 설명 문구 */
+.review-section-header.center-aligned .review-desc {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100%;
+}
+
+/* 윈도우 풀 위드 캐러셀 외곽 컨테이너 */
+.carousel-outer-container.full-width-window {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 좌우 화살표 버튼 위치: 화면 좌우 끝 여백 안쪽에 고정 */
+.full-width-window .c-nav-btn.prev-btn {
+  left: 30px;
+}
+
+.full-width-window .c-nav-btn.next-btn {
+  right: 30px;
 }

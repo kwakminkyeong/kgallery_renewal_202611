@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About K-Gallery | Discover Korean Culture</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- 공통 style.css 연결 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar (2-Column Split) -->
+  <div class="top-announcement">
+    <div class="container announcement-inner">
+      <div class="announcement-left">
+        <span>COMPLIMENTARY SHIPPING ON ALL ORDERS OVER $75 | AUTHENTIC KOREAN LIFESTYLE CURATION</span>
+      </div>
+      <a href="about.html" class="announcement-right" aria-label="Meet K-Gun and explore our story">
+        <div class="announcement-avatar-wrap">
+          <img src="image/kgun_face.png" alt="Curator K-Gun" class="announcement-avatar">
+        </div>
+        <span class="announcement-story-text">
+          <strong>Curious who packs your boxes?</strong> Meet K-Gun
+        </span>
+        <span class="announcement-story-badge">
+          Read Story
+          <svg class="badge-arrow" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Header (기존 레이아웃 유지) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo-wrap">
+        <a href="index.html" class="logo-text"><img src="image/kgallery_logo.png" width="200px" alt="Kgallery"></a>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav class="main-nav">
+        <a href="https://k-gallery.com/shop/collections/new-arrivals" class="nav-link">New</a>
+        <a href="https://k-gallery.com/shop/brands" class="nav-link">Brands</a>
+        <a href="https://k-gallery.com/shop/collections/all-items" class="nav-link">Shop All</a>
+        <a href="https://k-gallery.com/shop/collections/sale" class="nav-link">Offers</a>
+        <a href="about.html" class="nav-link active">About Us</a>
+        <a href="visit_us.html" class="nav-link">Visit Us</a>
+        <a href="https://k-gallery.com/shop/services/beauty-consultations" class="nav-btn-pill">AI Beauty</a>
+      </nav>
+
+      <!-- Action Icons -->
+      <div class="header-actions">
+        <button class="action-icon-btn" aria-label="Search">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <button class="action-icon-btn" aria-label="Wishlist">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        </button>
+        <button class="action-icon-btn" aria-label="Cart">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="action-badge" id="cartCountBadge">2</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="about-page">
+    
+    <!-- Hero Section -->
+    <section class="about-hero">
+      <div class="container hero-container">
+        <div class="hero-text-content">
+          <span class="sub-label">MEET K-GALLERY</span>
+          <h1 class="hero-title">Discover Korea.<br>Find what speaks to you.</h1>
+          <p class="hero-desc">
+            Explore Korean favorites and independent brands, alongside stories about beauty, food, travel, and everyday life in Korea. Get inspired, find something you love, and make it part of your everyday.
+          </p>
+          <!-- <div class="hero-btns">
+            <a href="https://k-gallery.com/shop" class="btn-primary">Peek Inside</a>
+            <a href="https://k-gallery.com/stories" class="btn-secondary">Stories</a>
+          </div> -->
+        </div>
+        <div class="hero-visual">
+          <img src="image/about 01.png" alt="Curator K-Gun Welcome" class="hero-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- Curation Section -->
+    <section class="about-section curation-section">
+      <div class="container">
+        <div class="section-center-header">
+          <h2 class="section-title">Familiar favorites. New discoveries.</h2>
+          <p class="section-desc">
+            From well-known Korean brands to independent labels, explore a variety of products in one place. Shop your favorites and discover something you didn’t know you’d love.
+          </p>
+        </div>
+        <div class="curation-banner">
+          <img src="image/about 02.png" alt="K-Gallery Curation" class="curation-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section class="about-section stories-section">
+      <div class="container">
+        <div class="section-center-header">
+          <span class="deco-bar"></span>
+          <h2 class="section-title">There’s more to discover about Korea.</h2>
+          <p class="section-desc">
+            Get to know Korea through beauty tips, food, travel, and stories from everyday life. Find inspiration for your next trip, your daily routine, or something new to try.
+          </p>
+        </div>
+
+        <div class="stories-grid">
+          <!-- 첫 번째: Beauty -->
+          <a href="#" class="story-card">
+            <div class="card-img-wrap">
+              <img src="image/beauty.jpg" alt="Beauty & Lifestyle" class="story-img-beauty">
+            </div>
+            <div class="card-footer">
+              <span>Beauty & Lifestyle</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+
+          <!-- 두 번째: Food -->
+          <a href="#" class="story-card">
+            <div class="card-img-wrap">
+              <img src="image/food.jpg" alt="Food & Culture" class="story-img-food">
+            </div>
+            <div class="card-footer">
+              <span>Food & Culture</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+
+          <!-- 세 번째: Travel -->
+          <a href="#" class="story-card">
+            <div class="card-img-wrap">
+              <img src="image/travel.jpg" alt="Travel in Korea" class="story-img-travel">
+            </div>
+            <div class="card-footer">
+              <span>Travel in Korea</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="about-section trust-section">
+      <div class="container">
+        <div class="section-center-header">
+          <h2 class="section-title">Korean finds. Shopping made simple.</h2>
+          <p class="section-desc">
+            Shop authentic Korean products shipped from the U.S., with no additional import duties upon delivery within the U.S. Enjoy free shipping on orders of $59 or more.
+          </p>
+        </div>
+
+        <div class="trust-grid">
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+            </div>
+            <h4>Authentic Korean Products</h4>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="1.8"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            </div>
+            <h4>Shipped from the U.S.</h4>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="1.8"><polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path></svg>
+            </div>
+            <h4>Free Shipping on Orders $59+</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <!-- Footer CTA -->
+    <section class="about-section cta-section">
+      <div class="container">
+        <div class="cta-card-banner">
+          <div class="cta-content">
+            <span class="deco-bar left-bar"></span>
+            <h2 class="cta-title">Find your next Korean favorite.</h2>
+            <p class="cta-desc">Shop for something you’ll love, or explore stories that bring you closer to Korea.</p>
+            <div class="cta-btn-group">
+              <a href="index.html" class="btn-primary">Shop Now &rarr;</a>
+              <a href="https://k-gallery.com" class="btn-secondary">Explore Stories &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (기존 구조) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main-grid">
+        <div class="footer-brand">
+          <h2>KGallery</h2>
+          <p>Connecting conscious global homes with authentic Korean artisans, clean beauty innovators, and mindful craft traditions.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Featured Brands</a></li>
+            <li><a href="#">Shop All</a></li>
+            <li><a href="#">Seasonal Offers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Client Care</h4>
+          <ul class="footer-links">
+            <li><a href="#">Shipping &amp; Returns</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Authenticity Guarantee</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Join The Journal</h4>
+          <p style="font-size: 13.5px; color: #8C8C8C; margin-bottom: 12px;">Get weekly stories on design, artisan recipes, and exclusive seasonal releases.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault();">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 KGallery Seoul. All rights reserved.</div>
+        <div>Designed for Mindful Living</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -15,10 +15,34 @@
 </head>
 <body>
 
-  <!-- Top Announcement Bar -->
-  <div class="top-announcement">
-    COMPLIMENTARY SHIPPING ON ALL ORDERS OVER $75 | AUTHENTIC KOREAN LIFESTYLE CURATION
-  </div>
+      <!-- Top Announcement Bar (2-Column Split) -->
+    <div class="top-announcement">
+      <div class="container announcement-inner">
+        
+        <!-- 1. 좌측: 무료배송 및 큐레이션 안내 -->
+        <div class="announcement-left">
+          <span>COMPLIMENTARY SHIPPING ON ALL ORDERS OVER $75 | AUTHENTIC KOREAN LIFESTYLE CURATION</span>
+        </div>
+
+        <!-- 2. 우측: 케이군 스토리 바로가기 (About 링크) -->
+        <a href="about.html" class="announcement-right" aria-label="Meet K-Gun and explore our story">
+          <div class="announcement-avatar-wrap">
+            <img src="image/kgun_face.png" alt="Curator K-Gun" class="announcement-avatar">
+          </div>
+          <span class="announcement-story-text">
+            <strong>Curious who packs your boxes?</strong> Meet K-Gun
+          </span>
+          <span class="announcement-story-badge">
+            Read Story
+            <svg class="badge-arrow" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </a>
+
+      </div>
+    </div>
 
   <!-- Header -->
   <header class="site-header">
